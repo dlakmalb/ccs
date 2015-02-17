@@ -1,6 +1,5 @@
-<?php 
-		//require_once(dbconnection.php); 
-	?>
+<?php include("dbconnection.php"); ?>
+
 <!DOCTYPE html>
 <html>
     <head>

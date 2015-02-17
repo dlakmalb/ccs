@@ -1,4 +1,5 @@
 <?php include("dbconnection.php"); ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +20,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <form class="form-horizontal" action="sign_in.php" method="POST">
+                            <form class="form-horizontal" action="signInConnector.php" method="POST">
                                 <div class="form-group">
                                   <input type="text" class="form-control textTransparent textBorder" id="inputusername" name="inputusername" placeholder="Username" />
                                 </div>
@@ -30,7 +31,7 @@
                                   <input type="checkbox" id="remember_me" name="remember_me"/> Remember me
                                 </div>
                                 <div class="form-group">
-                                  <input class="form-control btn btn-block btn-primary" type="submit" name="signIn" value="SignIn" />
+                                  <input class="form-control btn btn-block btn-primary" type="submit" name="signIn" value="signIn" />
                                 </div>
                             </form>
                         </div>
