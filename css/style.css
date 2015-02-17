@@ -1,0 +1,20 @@
+
+.textTransparent
+{
+background-color:transparent;
+color:#1f5afe;
+}
+
+.textBorder
+{
+border-color:#00BFFF;
+border-width:1px;
+border-style:solid;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    top:200px;
+}
