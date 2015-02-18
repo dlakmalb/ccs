@@ -59,61 +59,61 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
-					<form class="form-horizontal">
+					<form class="form-horizontal" action="comregconnector.php" method="POST">
 						<fieldset>
 							<legend>Company Registration</legend>
 							<div class="form-group">
 								<label for="inputcode" class="col-lg-3 control-label">Company Code</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputcode" placeholder="Company Code" type="text">
+									<input class="form-control input-sm" id="inputcode" name="inputcode" placeholder="Company Code" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputname" class="col-lg-3 control-label">Company Name</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputname" placeholder="Company Name" type="text">
+									<input class="form-control input-sm" id="inputname" name="inputname" placeholder="Company Name" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputaddress" class="col-lg-3 control-label">Address</label>
 								<div class="col-lg-9">
-									<textarea class="form-control input-sm" rows="5" id="inputaddress" placeholder="Address"></textarea>
+									<textarea class="form-control input-sm" rows="5" id="inputaddress" name="inputaddress" placeholder="Address"></textarea>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputtelephone1" class="col-lg-3 control-label">Telephone 1</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputtelephone1" placeholder="Telephone 1" type="text">
+									<input class="form-control input-sm" id="inputtelephone1" name="inputtelephone1" placeholder="Telephone 1" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputtelephone2" class="col-lg-3 control-label">Telephone 2</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputtelephone2" placeholder="Telephone 2" type="text">
+									<input class="form-control input-sm" id="inputtelephone2" name="inputtelephone2" placeholder="Telephone 2" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputfax" class="col-lg-3 control-label">Fax</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputfax" placeholder="Fax" type="text">
+									<input class="form-control input-sm" id="inputfax" name="inputfax" placeholder="Fax" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputemail" class="col-lg-3 control-label">Email</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputemail" placeholder="Email" type="text">
+									<input class="form-control input-sm" id="inputemail" name="inputemail" placeholder="Email" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputownername" class="col-lg-3 control-label">Owner Name</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputownername" placeholder="Owner Name" type="text">
+									<input class="form-control input-sm" id="inputownername" name="inputownername" placeholder="Owner Name" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputownertelphone" class="col-lg-3 control-label">Owner Tel. No.</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputownertelphone" placeholder="Owner Telephone No." type="text">
+									<input class="form-control input-sm" id="inputownertelphone" name="inputownertelphone" placeholder="Owner Telephone No." type="text">
 								</div>
 							</div>
 							<div class="form-group">
