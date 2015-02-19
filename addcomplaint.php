@@ -92,25 +92,25 @@
 							<div class="form-group">
 								<label for="inputcomplaintid" class="col-lg-3 control-label">Complaint Id</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputcomplaintid" placeholder="Complaint Id" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputcomplaintid" placeholder="Complaint Id" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputdate" class="col-lg-3 control-label">Created Date</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputdate" placeholder="Created Date" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputdate" placeholder="Created Date" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputtitle" class="col-lg-3 control-label">Title</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputtitle" placeholder="Title" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputtitle" placeholder="Title" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputcomplaintdes" class="col-lg-3 control-label">Descrption</label>
 								<div class="col-lg-9">
-									<textarea class="form-control input-sm" rows="5" id="inputcomplaintdes" placeholder="Description"></textarea>
+									<textarea class="form-control input-sm textTransparent textBorder" rows="5" id="inputcomplaintdes" placeholder="Description"></textarea>
 								</div>
 							</div>
 							<div class="form-group">

@@ -113,7 +113,7 @@
 							<div class="form-group">
 								<label for="inputownertelphone" class="col-lg-3 control-label">Owner Tel. No.</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm textTransparent textBorder" id="inputownertelphone" name="inputownertelphone" placeholder="Owner Telephone No." type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputownertelephone" name="inputownertelephone" placeholder="Owner Telephone No." type="text">
 								</div>
 							</div>
 							<div class="form-group">

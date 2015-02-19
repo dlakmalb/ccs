@@ -1,3 +1,5 @@
+<?php include("dbconnection.php"); ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -81,6 +83,7 @@
 								<label for="inputsalutation" class="col-lg-3 control-label">Salutation</label>
 								<div class="col-lg-9">
 									<select class="form-control input-sm" id="selectsalutation">
+									  <option> </option>
 									  <option>Mr.</option>
 									  <option>Mrs.</option>
 									  <option>Miss</option>
@@ -90,19 +93,19 @@
 							<div class="form-group">
 								<label for="inputemployeecode" class="col-lg-3 control-label">Employee Code</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputemployeecode" placeholder="Employee Code" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputemployeecode" placeholder="Employee Code" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputemployeename" class="col-lg-3 control-label">Employee Name</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputemployeename" placeholder="Employee Name" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputemployeename" placeholder="Employee Name" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputtelephone" class="col-lg-3 control-label">Telephone</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputtelephone" placeholder="Telephone" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputtelephone" placeholder="Telephone" type="text">
 								</div>
 							</div>
 							<div class="form-group">
@@ -118,6 +121,7 @@
 			</div>
 		</div> 
 	<script>$("#selectcompany").select2({ placeholder: "Select a Company"});</script>
+	<script>$("#selectsalutation").select2({ placeholder: "Select Salutation"});</script>
     </body>
 	
 

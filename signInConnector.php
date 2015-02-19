@@ -4,7 +4,6 @@
 	
 	$username = $_POST['inputusername'];		// get input username
 	$password = $_POST['inputpassword'];		// get input password
-	//$btSubmit = $_POST['signIn'];
 
 	if(empty($_POST['inputusername']))	// check user inputs
 	{

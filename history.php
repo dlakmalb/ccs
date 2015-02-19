@@ -92,31 +92,31 @@
 							<div class="form-group">
 								<label for="inputcomplaintid" class="col-lg-3 control-label">Complaint Id</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputcomplaintid" placeholder="Complaint Id" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputcomplaintid" placeholder="Complaint Id" type="text">
 								</div>
 							</div>
 														
 							<div class="form-group" >
 									<label for="inputfromdate" class="control-label col-lg-3">From</label>  
 								   <div class="col-lg-4">
-									<input class="form-control input-sm" id="inputfromdate" placeholder="From Date" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputfromdate" placeholder="From Date" type="text">
 								   </div>
 								   <label for="inputtodate" class="control-label col-lg-1">To</label>
 								   <div class="col-lg-4">
-										<input class="form-control input-sm" id="inputtodate" placeholder="To Date"  type="text">
+										<input class="form-control input-sm textTransparent textBorder" id="inputtodate" placeholder="To Date"  type="text">
 									</div>
                             </div>
 							
 							<div class="form-group">
 								<label for="inputstatus" class="col-lg-3 control-label">Status</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputstatus" placeholder="Status" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputstatus" placeholder="Status" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputuser" class="col-lg-3 control-label">User</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm" id="inputuser" placeholder="User" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputuser" placeholder="User" type="text">
 								</div>
 							</div>
 							<div class="form-group">

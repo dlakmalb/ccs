@@ -2,7 +2,7 @@
 
 <?php	// get user inputs
 	
-	$code = ($_POST['inputcode']);
+	/*$code = ($_POST['inputcode']);
 	$name = ($_POST['inputname']);
 	$address = ($_POST['inputaddress']);
 	$telephone1 = ($_POST['inputtelephone1']);
@@ -11,20 +11,22 @@
 	$email = ($_POST['inputemail']);
 	$owner_name = ($_POST['inputownername']);
 	$owner_telephone = ($_POST['inputownertelephone']);
+	*/
 	
-	
-	$sql = "INSERT INTO company (code, name, address, telephone1, telephone2, fax, email, owner_name, owner_telephone)
-	VALUES ('".$code."', '".$name."', '".$address."', '".$telephone1."', '".$telephone2."', '".$fax."', '".$email."', '".$owner_name."', '".$owner_telephone."')";
-	
+	$sql = "SELECT code, name, address, telephone1, telephone2, fax, email, owner_name, owner_telephone FROM company";
 	$result=mysqli_query($conn,$sql);		
 	
-	if ($result) 
+	if (mysqli_num_rows($result) > 0) 
 	{
-		header("Location: home.php");		// redirect after filling company registration form
-	}
+		// output data of each row
+		while($rowdata = mysqli_fetch_assoc($result))
+			{
+			echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+			}
+	} 
 	else 
 	{
-		echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+		echo "0 results";
 	}
 
 	mysqli_close($conn);	// close connection
