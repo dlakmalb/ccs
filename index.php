@@ -31,7 +31,7 @@
                                   <input type="checkbox" id="remember_me" name="remember_me"/> Remember me
                                 </div>
                                 <div class="form-group">
-                                  <input class="form-control btn btn-block btn-primary" type="submit" name="signIn" value="signIn" />
+                                  <input class="form-control btn btn-block btn-primary" type="submit" name="signIn" value="Sign In" />
                                 </div>
                             </form>
                         </div>

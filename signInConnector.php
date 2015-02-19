@@ -1,41 +1,12 @@
+<?php require_once("dbconnection.php"); ?> 
+
 <?php
-	require_once("dbconnection.php");
-	session_start();
+	
+	$username = $_POST['inputusername'];		// get input username
+	$password = $_POST['inputpassword'];		// get input password
+	//$btSubmit = $_POST['signIn'];
 
-	if($_SERVER["REQUEST_METHOD"] == "POST")
-	{
-		$username=addslashes($_POST['inputusername']);		// username and password sent from Form
-		$password=addslashes($_POST['inputpassword']);
-	
-		$sql = "SELECT user_id FROM user WHERE username = '$username' AND password='$password'";
-		$result= mysql_query($sql);
-		$row=mysql_fetch_array($result);
-		$active=$row['active'];
-		$rowcount=mysql_num_rows($result);
-		
-		if ($rowcount==1) 
-		{
-			session_register("username");
-			$_SESSION['login_user']=$username;
-			header("location: home.php"); // redirect page
-		} 
-		else 
-		{
-			echo "Invalide Credentials...!!!";
-		}
-	}
-	
-		
-	
-
-	
-
-/*
-	$tablename="user";
-	
-	require_once("dbconnection.php");
-
-	if(empty($_POST['inputusername']))
+	if(empty($_POST['inputusername']))	// check user inputs
 	{
 		echo "Username is Required";		
 		return false;
@@ -45,27 +16,28 @@
 		echo "Password is Required";
 		return false;
 	}
+	
+	$sql="SELECT username, password FROM user WHERE username='$username' AND password='$password'";
+	$result=mysqli_query($conn,$sql);
+	
+	$rowcount=mysqli_fetch_array($result, MYSQLI_BOTH);
 
-	$username = $_POST['inputusername'];		// get input username
-	$password = $_POST['inputpassword'];		// get input password
+	if($rowcount && ( $rowcount['password'] == $_POST['inputpassword']))	// username and password match
+	{
+		$_SESSION['username'] = $rowcount['username']; // accept login
 		
-	$sql = "SELECT COUNT(*) FROM $tablename WHERE username = '$username' AND password='$password'";
-	header("location: home.php"); // redirect page
-	
-	echo $sql="SELECT * FROM $tablename WHERE username='$username' AND password='$password'";
-	$result=mysql_query($sql);
-	
-	$rowcount=mysql_num_rows($result);
-	// If result matched $username and $password, table row must be 1 row
-	if ($rowcount==FALSE) 
-	{
-		header("location: home.php"); // redirect page
-	} 
-	else 
-	{
-		echo "Invalide Credentials...!!!";
-	}
+		if( $_POST['redirect'] == "")	// if no redirection required
+		{
 
-	ob_end_flush();
-*/	
+			header("Location: home.php");
+		}
+		
+	}
+	else	// wrong combination
+	{
+		header("Location: index.php?sucess=0");
+	}
+	
+	mysqli_close($conn);	// close connection
+
 ?>
