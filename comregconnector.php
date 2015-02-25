@@ -20,7 +20,7 @@
 	
 	if ($result) 
 	{
-		header("Location: home.php");		// redirect after filling company registration form
+		header("Location: companyreg.php");		// redirect after filling company registration form
 	}
 	else 
 	{

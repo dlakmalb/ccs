@@ -63,26 +63,31 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
-					<form class="form-horizontal">
+					<form class="form-horizontal" action="empregconnector.php" method="POST">
 						<fieldset>
 							<legend>Employee Registration</legend>
 							<div class="form-group">
 								<label for="inputcompany" class="col-lg-3 control-label">Company</label>
-								<div class="col-lg-9">
-									<select class="form-control input-sm" id="selectcompany">
+								<div class="col-lg-9">	
+									<select class="form-control input-sm textTransparent textBorder" id="selectcompany" name="selectcompany">
 									  <option> </option>
-									  <option>George</option>
-									  <option>Nipun</option>
-									  <option>ABC</option>
-									  <option>DEF</option>
-									  <option>GHI</option>
+									 <?php 
+										$sql = "SELECT name, code FROM `company`";
+										$result = mysqli_query($conn, $sql);
+										while($row=mysqli_fetch_array($result, MYSQL_ASSOC))
+										{                                                 
+											echo "<option value='".$row['code']."'>".$row['code']."-".$row['name']."</option>";
+										}
+											"</select>"
+									?>
+									  
 									</select>
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputsalutation" class="col-lg-3 control-label">Salutation</label>
 								<div class="col-lg-9">
-									<select class="form-control input-sm" id="selectsalutation">
+									<select class="form-control input-sm textTransparent textBorder" id="selectsalutation">
 									  <option> </option>
 									  <option>Mr.</option>
 									  <option>Mrs.</option>
@@ -93,19 +98,19 @@
 							<div class="form-group">
 								<label for="inputemployeecode" class="col-lg-3 control-label">Employee Code</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm textTransparent textBorder" id="inputemployeecode" placeholder="Employee Code" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputemployeecode" name="inputemployeecode"placeholder="Employee Code" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputemployeename" class="col-lg-3 control-label">Employee Name</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm textTransparent textBorder" id="inputemployeename" placeholder="Employee Name" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputemployeename" name="inputemployeename"placeholder="Employee Name" type="text">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputtelephone" class="col-lg-3 control-label">Telephone</label>
 								<div class="col-lg-9">
-									<input class="form-control input-sm textTransparent textBorder" id="inputtelephone" placeholder="Telephone" type="text">
+									<input class="form-control input-sm textTransparent textBorder" id="inputtelephone" name="inputtelephone"placeholder="Telephone" type="text">
 								</div>
 							</div>
 							<div class="form-group">
