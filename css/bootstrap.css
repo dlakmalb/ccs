@@ -177,7 +177,7 @@ legend {
   padding: 0;
 }
 textarea {
-  overflow: auto;
+  overflow: -moz-hidden-unscrollable;
 }
 optgroup {
   font-weight: bold;

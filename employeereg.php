@@ -71,7 +71,8 @@
 								<div class="col-lg-9">	
 									<select class="form-control input-sm textTransparent textBorder" id="selectcompany" name="selectcompany">
 									  <option> </option>
-									 <?php 
+									  
+									<?php		// load company names to select box
 										$sql = "SELECT name, code FROM `company`";
 										$result = mysqli_query($conn, $sql);
 										while($row=mysqli_fetch_array($result, MYSQL_ASSOC))
@@ -87,7 +88,7 @@
 							<div class="form-group">
 								<label for="inputsalutation" class="col-lg-3 control-label">Salutation</label>
 								<div class="col-lg-9">
-									<select class="form-control input-sm textTransparent textBorder" id="selectsalutation">
+									<select class="form-control input-sm textTransparent textBorder" id="selectsalutation" name="selectsalutation">
 									  <option> </option>
 									  <option>Mr.</option>
 									  <option>Mrs.</option>
